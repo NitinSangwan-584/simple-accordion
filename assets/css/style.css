@@ -12,7 +12,6 @@ section {
     align-items: center;
     align-content: center;
     justify-items: center;
-
 }
 
 .heading {
@@ -26,6 +25,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    background-position: left;
 }
 
 .container {
@@ -41,17 +41,29 @@ section {
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
-    background: #fff;
     margin: auto;
 }
 
 .accordion-item {
     border-top: 1px solid #ddd;
+    position: relative;
+    backdrop-filter: blur(40px);
+}
+
+.accordion-item .active .arrow {
+    transform: rotate(180deg);
+}
+
+.arrow {
+    position: absolute;
+    top: 40%;
+    right: 2%;
 }
 
 .accordion-item:first-child {
     border-top: none;
 }
+
 
 .accordion-header {
     width: 100%;
@@ -63,17 +75,11 @@ section {
     outline: none;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.accordion-header:hover {
-    background-color: grey;
 }
 
 .accordion-content {
     display: none;
     padding: 15px;
-    background: black;
     color: gray;
 }
 
