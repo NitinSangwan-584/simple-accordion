@@ -77,5 +77,19 @@ section {
     display: none;
     padding: 15px;
     color: white;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
     backdrop-filter: blur(90px);
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+.arrow {
+    transition: transform 0.4s ease;
+}
+
+.arrow.rotated {
+    transform: rotate(180deg);
 }
