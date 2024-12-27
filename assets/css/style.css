@@ -68,16 +68,14 @@ section {
     border: none;
     outline: none;
     font-size: 16px;
+    color: white;
     cursor: pointer;
-    background: linear-gradient(180deg, white 0%, yellow 100%);
-    background-clip: text;
-    color: transparent;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
 }
 
 .accordion-content {
     display: none;
     padding: 15px;
     color: white;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(90px);
 }
